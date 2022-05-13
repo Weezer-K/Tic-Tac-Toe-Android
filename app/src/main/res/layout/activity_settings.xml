@@ -3,25 +3,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     android:background="@drawable/whiteback"
-    >
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
 
-        android:text="Options"
-        android:textSize="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="Options"
+            android:textSize="50dp" />
 
 
     </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -29,18 +31,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
-            android:text="Player 1's Piece"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:text="Player 1's Piece" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Player 2's Piece"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:text="Player 2's Piece" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -70,6 +74,7 @@
         </Spinner>
 
     </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -77,18 +82,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
-            android:text="Player 1 Font"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:text="Player 1 Font" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Player 2 Font"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:text="Player 2 Font" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -117,6 +124,7 @@
         </Spinner>
 
     </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -124,18 +132,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
-            android:text="Player 1's Color"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:text="Player 1's Color" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Player 2's Color"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:text="Player 2's Color" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -163,6 +173,7 @@
         </Spinner>
 
     </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -170,18 +181,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
-            android:text="Background"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:text="Background" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Grid Color"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:text="Grid Color" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -218,18 +231,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
-            android:text="Music"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:text="Music" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Turn"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:text="Turn" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -259,25 +274,30 @@
     </RelativeLayout>
 
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="25dp" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/profileName"
-        android:hint="Enter Profile Name"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Profile Name" />
+
+        <Button
+            android:id="@+id/endOptions"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toEndOf="@+id/profileName"
+            android:layout_toRightOf="@+id/profileName"
+            android:text="Play" />
     </RelativeLayout>
-    <Button
-        android:id="@+id/endOptions"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Play" />
 
 
 </LinearLayout>
