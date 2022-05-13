@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/rocky"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="High Score : 50 Games"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/totalNumberOfGames"
+            android:fontFamily="monospace"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:text="You played 0 games!!!!"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player1finalscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="monospace"
+            android:textColor="#FFFFFF"
+            android:text="Player 1 won 0 games"
+            android:textSize="13dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_alignParentRight="true"
+            android:id="@+id/player2finalscore"
+            android:text="Player 2 one won 0 games"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/quitProgram"
+                android:text="Exit Application"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/mainMenu"
+                android:text="Return to main menu"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    </FrameLayout>
+
+
+    <VideoView
+        android:id="@+id/endcredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

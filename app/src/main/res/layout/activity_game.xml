@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <TextView
+            android:id="@+id/player2Score"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:text="Player 2: 0" />
+
+        <TextView
+            android:id="@+id/totalGames"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="# of games: 0"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/player1Score"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="29dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Player1: 0"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <VideoView
+            android:layout_marginBottom="-600dp"
+            android:id="@+id/aspect16by9"
+            android:layout_width="650dp"
+            android:layout_height="800dp"
+            android:visibility="invisible"
+            />
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+       >
+
+
+
+        <cisc181.myproject.views.CustomView
+            android:id="@+id/gridView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:background="@null" />
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/circleRow1"
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle00"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle01"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle02"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="270dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/circleRow2"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle10"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle11"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle12"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="270dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/circleRow3"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle20"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle21"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:background="@null" />
+
+            <cisc181.myproject.views.CircleView
+                android:id="@+id/circle22"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="270dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/squareRow1"
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square00"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square01"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square02"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="270dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/squareRow2"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square10"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square11"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square12"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="270dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/squareRow3"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square20"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square21"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:background="@null" />
+
+            <cisc181.myproject.views.SquareView
+                android:id="@+id/square22"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="270dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/grid01"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/grid02"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="111dp"
+                android:layout_toEndOf="@+id/grid01"
+                android:layout_toRightOf="@+id/grid01"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/grid00"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="112dp"
+                android:layout_marginRight="112dp"
+                android:layout_toStartOf="@+id/grid01"
+                android:layout_toLeftOf="@+id/grid01"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/grid11"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/grid12"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="111dp"
+                android:layout_toEndOf="@+id/grid11"
+                android:layout_toRightOf="@+id/grid11"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/grid10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="112dp"
+                android:layout_marginRight="112dp"
+                android:layout_toStartOf="@+id/grid11"
+                android:layout_toLeftOf="@+id/grid11"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/grid21"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/grid22"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="111dp"
+                android:layout_toEndOf="@+id/grid21"
+                android:layout_toRightOf="@+id/grid21"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/grid20"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="112dp"
+                android:layout_marginRight="112dp"
+                android:layout_toStartOf="@+id/grid21"
+                android:layout_toLeftOf="@+id/grid21"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+    </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Quit" />
+
+        <Button
+            android:id="@+id/nextGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:text="Next Game"
+            android:visibility="invisible" />
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="25dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

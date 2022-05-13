@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/whiteback"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:text="Options"
+        android:textSize="50dp"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Player 1's Piece"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Player 2's Piece"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/player1PieceSpinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/player2PieceSpinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Player 1 Font"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Player 2 Font"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/fontspinner1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/fontspinner2"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Player 1's Color"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Player 2's Color"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/colortextspinner1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/colorspinner2"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Background"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Grid Color"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/backgroundSpinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/gridColorSpinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Turn"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/musicSpinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/turnDeciderSpinner"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/profileName"
+        android:hint="Enter Profile Name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/endOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play" />
+
+
+</LinearLayout>
